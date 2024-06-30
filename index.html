@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+
+                <img src="" alt="">
+
+
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">About</a></li>
+
+                    <li><a href="#">Portfolio</a></li>
+
+                    <li><a href="#">Project</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        <div id="header-content">
+
+            <div id="header-text">
+
+                <h1 id="heading-name">Hi, I'm <span>Rounak Mishra</span></h1>
+
+                <p id="paragraph">Frontend Developer</p>
+
+                <button><a href="#">Hire Me!</a></button>
+
+                <button><a href="#">Download Resume</a></button>
+
+            </div>
+
+            <img id="header-image" src="Profile photo.jpg" alt="profile photo">
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+
+                    <img src="Profile photo.jpg" alt="">
+
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur quod commodi perferendis vel ad repellat, culpa officiis soluta illum laudantium odit iusto dolores voluptatum mollitia nisi cum ex aliquid!
+
+                    Blanditiis sunt perferendis corrupti sed minus odit ex error, delectus accusantium tempore dolor quasi suscipit voluptates iusto molestiae placeat porro dolores excepturi nostrum cupiditate ab minima vero. Eveniet, non odio?</p>
+
+                   <div class="tab-titles">
+
+                    <p class="tab-links active-link" onclick="opentab('skills')">Education</p>
+
+                    <p class="tab-links" onclick="opentab('education')">Skills</p>
+
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                   </div>
+
+                   <div class="tab-contents" id="education">
+
+                        <ul>
+
+                            <li><span>Programming Language</span><br>Python, C, & Java</li>
+
+                            <li><span>Fronted Development</span><br>HTML5, CSS, & Javascript</li>
+
+                        </ul>
+
+                   </div>
+
+                   <div class="tab-contents active-tab" id="skills">
+
+                    <ul>
+
+                        <li><span>B.Tech CSE (Galgotias University)</span><br>Session:- 2023-27</li>
+
+                        <li><span>12th (R.N College)</span><br>Grade:- 84%<br>Session:- 2021-23</li>
+
+                        <li><span>10th (S.D.S High School)</span><br>Grade:- 81%<br>Session:-2020-21</li>
+
+                    </ul>
+
+               </div>
+
+               <div class="tab-contents" id="experience">
+
+                <ul>
+
+                    <li>No Any Experience</li>
+
+                </ul>
+
+           </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+
+                tablink.classList.remove("active-link");
+
+            }
+
+            for(tabcontent of tabcontents){
+
+                tabcontent.classList.remove("active-tab");
+
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    
+
+</body>
+
+                      </html>
